@@ -1,0 +1,13 @@
+CREATE DATABASE tournaments_info;
+USE tournaments_info;
+
+CREATE TABLE tournaments_data_sheet
+            (
+                announcement_id BIGINT  PRIMARY KEY,
+                tournament_name VARCHAR(1000),
+                tournament_description VARCHAR(1000),
+                zh_datetime datetime,
+                check_in_id BIGINT,
+                challonge_tournament_id BIGINT,
+                challonge_start TINYINT
+            );
